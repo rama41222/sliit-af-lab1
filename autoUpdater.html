@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto Updater</title>
+</head>
+<body>
+<div style="padding-top: 20px;" align="center" id="auto_text"></div>
+<hr/>
+<input type="text" name="auto_input" oninput="updateText(this.value)">
+</body>
+<script type="text/javascript">
+	
+	function updateText(obj){
+
+		var updateText = obj;
+		document.getElementById('auto_text').innerHTML = updateText;
+
+	}
+</script>
+</html>
